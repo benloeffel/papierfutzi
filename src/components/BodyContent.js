@@ -1,20 +1,14 @@
 import * as React from "react";
-import { Formik, Form, Field } from "formik";
+import { Formik, Form, FastField } from "formik";
 import {
   styled,
   Container,
-  Button,
-  LinearProgress,
   Grid,
   Typography,
-  FormGroup,
   InputLabel,
   MenuItem,
-  Fab,
 } from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
 import { TextField, CheckboxWithLabel, Select } from "formik-material-ui";
-
 import {
   KeyboardDatePicker,
   KeyboardDateTimePicker,
@@ -40,8 +34,8 @@ const BodyContent = () => {
       <Formik
         initialValues={{
           // Booking Details
-          firstName: "",
-          lastName: "",
+          bookingNumber: "",
+          clientName: "",
           agencyName: "",
           departureDate: null,
           departureBase: "",
@@ -86,32 +80,32 @@ const BodyContent = () => {
             <Form>
               <Grid container spacing={3}>
                 <Grid item xs={12}>
-                  <Typography variant='h4' component='h4'>
+                  <Typography variant='h6' component='h6'>
                     Booking Details
                   </Typography>
                 </Grid>
-                <Grid item xs={4}>
-                  <Field
+                <Grid item xs={3}>
+                  <FastField
                     component={TextField}
-                    name='firstName'
+                    name='bookingNumber'
                     type='text'
-                    label='First Name'
+                    label='Booking Number'
                     InputLabelProps={{ shrink: true }}
                     fullWidth
                   />
                 </Grid>
-                <Grid item xs={4}>
-                  <Field
+                <Grid item xs={3}>
+                  <FastField
                     component={TextField}
-                    name='lastName'
+                    name='clientName'
                     type='text'
-                    label='Last Name'
+                    label='Client Name'
                     InputLabelProps={{ shrink: true }}
                     fullWidth
                   />
                 </Grid>
-                <Grid item xs={4}>
-                  <Field
+                <Grid item xs={3}>
+                  <FastField
                     component={TextField}
                     name='agencyName'
                     type='text'
@@ -121,7 +115,7 @@ const BodyContent = () => {
                   />
                 </Grid>
                 <Grid item xs={3}>
-                  <Field
+                  <FastField
                     component={KeyboardDatePicker}
                     name='departureDate'
                     label='Departure Date'
@@ -134,17 +128,17 @@ const BodyContent = () => {
                   />
                 </Grid>
                 <Grid item xs={3}>
-                  <Field
+                  {/* <FastField
                     component={TextField}
                     name='departureBase'
                     type='text'
                     label='Departure Base'
                     InputLabelProps={{ shrink: true }}
                     fullWidth
-                  />
+                  /> */}
                 </Grid>
                 <Grid item xs={12}>
-                  <Field
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasSignedContract'
@@ -152,44 +146,44 @@ const BodyContent = () => {
                       label: "Signed Contract",
                       style: { fontSize: "12px" },
                     }}
-                  ></Field>
-                  <Field
+                  ></FastField>
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasPassport'
                     Label={{ label: "Passport" }}
-                  ></Field>
-                  <Field
+                  />
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasCrewList'
                     Label={{ label: "Crew List" }}
-                  ></Field>
-                  <Field
+                  />
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasSailingLicense'
                     Label={{ label: "Sailing License" }}
-                  ></Field>
-                  <Field
+                  />
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasSailingExperience'
                     Label={{ label: "Sailing Experience" }}
-                  ></Field>
-                  <Field
+                  />
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasNightSailingPermit'
                     Label={{ label: "Night Sailing Permit" }}
-                  ></Field>
-                  <Field
+                  />
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='hasProvisioningList'
                     Label={{ label: "Provisioning List" }}
-                  ></Field>
-                  <Field
+                  />
+                  <FastField
                     component={CheckboxWithLabel}
                     type='checkbox'
                     name='requiresTransfer'
@@ -197,22 +191,22 @@ const BodyContent = () => {
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <Typography variant='h4' component='h4'>
+                  <Typography variant='h6' component='h6'>
                     Flight Information
                   </Typography>
                 </Grid>
                 <Grid item xs={6}>
-                  <Field
+                  <FastField
                     component={TextField}
                     name='arrivalFlightNumber'
                     type='text'
                     label='Arrival Flight Number'
                     InputLabelProps={{ shrink: true }}
                     fullWidth
-                  ></Field>
+                  ></FastField>
                 </Grid>
                 <Grid item xs={6}>
-                  <Field
+                  <FastField
                     component={KeyboardDateTimePicker}
                     name='arrivalDateTime'
                     label='Arrival Date & Time'
@@ -222,17 +216,17 @@ const BodyContent = () => {
                   />
                 </Grid>
                 <Grid item xs={6}>
-                  <Field
+                  <FastField
                     component={TextField}
                     name='departureFlightNumber'
                     type='text'
                     label='Departure Flight Number'
                     InputLabelProps={{ shrink: true }}
                     fullWidth
-                  ></Field>
+                  ></FastField>
                 </Grid>
                 <Grid item xs={6}>
-                  <Field
+                  <FastField
                     component={KeyboardDateTimePicker}
                     name='departureDateTime'
                     label='Departure Date & Time'
@@ -242,7 +236,7 @@ const BodyContent = () => {
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <Typography variant='h4' component='h4'>
+                  <Typography variant='h6' component='h6'>
                     Payments
                   </Typography>
                 </Grid>
@@ -250,7 +244,7 @@ const BodyContent = () => {
                   <InputLabel htmlFor='payment-type-deposit' shrink={true}>
                     Deposit Payment Type
                   </InputLabel>
-                  <Field
+                  <FastField
                     component={Select}
                     name='paymentTypeDeposit'
                     inputProps={{
@@ -264,8 +258,8 @@ const BodyContent = () => {
                     <MenuItem value={"creditCard"}>Credit Card</MenuItem>
                     <MenuItem value={"cash"}>Cash</MenuItem>
                     <MenuItem value={"damageWaiver"}>Damage Waiver</MenuItem>
-                  </Field>
-                  <Field
+                  </FastField>
+                  <FastField
                     component={KeyboardDatePicker}
                     name='receivedDepositDate'
                     label='Received Deposit Date'
@@ -282,7 +276,7 @@ const BodyContent = () => {
                   >
                     Deposit Payment Type
                   </InputLabel>
-                  <Field
+                  <FastField
                     component={Select}
                     name='paymentTypeFinalPayment'
                     inputProps={{
@@ -296,8 +290,8 @@ const BodyContent = () => {
                     <MenuItem value={"creditCard"}>Credit Card</MenuItem>
                     <MenuItem value={"cash"}>Cash</MenuItem>
                     <MenuItem value={"damageWaiver"}>Damage Waiver</MenuItem>
-                  </Field>
-                  <Field
+                  </FastField>
+                  <FastField
                     component={KeyboardDatePicker}
                     name='receivedFinalPaymentDate'
                     label='Received Final Payment Date'
@@ -311,31 +305,31 @@ const BodyContent = () => {
                 {values.hasProvisioningList ? (
                   <>
                     <Grid item xs={12}>
-                      <Typography variant='h4' component='h4'>
+                      <Typography variant='h6' component='h6'>
                         Provisioning
                       </Typography>
                     </Grid>
                     <Grid item xs={6}>
-                      <Field
+                      <FastField
                         component={KeyboardDatePicker}
                         name='hasBeenSentToBaseDate'
                         label='Sent To Base Date'
                         format={datePickerFormat}
                         InputLabelProps={{ shrink: true }}
-                        fullwidth
+                        fullWidth
                         KeyboardButtonProps={{
                           "aria-label": "change date",
                         }}
                       />
                     </Grid>
                     <Grid item xs={6}>
-                      <Field
+                      <FastField
                         component={KeyboardDatePicker}
                         name='hasBeenConfirmedByBaseDate'
                         label='Confirmed By Base Date'
                         format={datePickerFormat}
                         InputLabelProps={{ shrink: true }}
-                        fullwidth
+                        fullWidth
                         KeyboardButtonProps={{
                           "aria-label": "change date",
                         }}
@@ -347,32 +341,32 @@ const BodyContent = () => {
                 {values.requiresTransfer ? (
                   <>
                     <Grid item xs={12}>
-                      <Typography variant='h4' component='h4'>
+                      <Typography variant='h6' component='h6'>
                         Transfer Information
                       </Typography>
                     </Grid>
                     <Grid item xs={4}>
-                      <Field
+                      <FastField
                         component={TextField}
                         name='passengerQuantity'
                         type='number'
                         label='Passenger Quantity'
-                        fullwidth
-                      ></Field>
+                        fullWidth
+                      ></FastField>
                     </Grid>
                     <Grid item xs={4}>
-                      <Field
+                      <FastField
                         component={CheckboxWithLabel}
                         type='checkbox'
                         name='hasBaseConfirmation'
                         Label={{ label: "Base Confirmation" }}
-                      ></Field>
+                      ></FastField>
                     </Grid>
                   </>
                 ) : null}
                 <Grid />
                 <Grid item xs={12}>
-                  <Field
+                  <FastField
                     component={TextField}
                     name='additionalInformation'
                     type='text'

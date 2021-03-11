@@ -2,7 +2,7 @@ import React from "react";
 import { Container, styled } from "@material-ui/core";
 
 const StyledFooter = styled("footer")({
-  position: "absolute",
+  position: "fixed",
   bottom: "0",
   left: "0",
   right: "0",
@@ -20,6 +20,9 @@ const Footer = () => {
       <Container>
         <small>
           Built with <span>❤</span> by Ben & Bee
+        </small>
+        <small>
+          Version <span>0.1</span>
         </small>
       </Container>
     </StyledFooter>
