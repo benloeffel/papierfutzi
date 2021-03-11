@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/papierfutzi/static/css/main.6ca6e2af.chunk.css",
+    "main.js": "/papierfutzi/static/js/main.fb7bb54c.chunk.js",
+    "main.js.map": "/papierfutzi/static/js/main.fb7bb54c.chunk.js.map",
+    "runtime-main.js": "/papierfutzi/static/js/runtime-main.fdb8b620.js",
+    "runtime-main.js.map": "/papierfutzi/static/js/runtime-main.fdb8b620.js.map",
+    "static/js/2.ed9302d7.chunk.js": "/papierfutzi/static/js/2.ed9302d7.chunk.js",
+    "static/js/2.ed9302d7.chunk.js.map": "/papierfutzi/static/js/2.ed9302d7.chunk.js.map",
+    "static/js/3.2b7122c0.chunk.js": "/papierfutzi/static/js/3.2b7122c0.chunk.js",
+    "static/js/3.2b7122c0.chunk.js.map": "/papierfutzi/static/js/3.2b7122c0.chunk.js.map",
+    "index.html": "/papierfutzi/index.html",
+    "static/css/main.6ca6e2af.chunk.css.map": "/papierfutzi/static/css/main.6ca6e2af.chunk.css.map",
+    "static/js/2.ed9302d7.chunk.js.LICENSE.txt": "/papierfutzi/static/js/2.ed9302d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fdb8b620.js",
+    "static/js/2.ed9302d7.chunk.js",
+    "static/css/main.6ca6e2af.chunk.css",
+    "static/js/main.fb7bb54c.chunk.js"
+  ]
+}
