@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/papierfutzi/static/css/main.6ca6e2af.chunk.css",
-    "main.js": "/papierfutzi/static/js/main.8ca1e418.chunk.js",
-    "main.js.map": "/papierfutzi/static/js/main.8ca1e418.chunk.js.map",
-    "runtime-main.js": "/papierfutzi/static/js/runtime-main.0c8eb353.js",
-    "runtime-main.js.map": "/papierfutzi/static/js/runtime-main.0c8eb353.js.map",
-    "static/js/2.4ce2ba1d.chunk.js": "/papierfutzi/static/js/2.4ce2ba1d.chunk.js",
-    "static/js/2.4ce2ba1d.chunk.js.map": "/papierfutzi/static/js/2.4ce2ba1d.chunk.js.map",
-    "static/js/3.dc033189.chunk.js": "/papierfutzi/static/js/3.dc033189.chunk.js",
-    "static/js/3.dc033189.chunk.js.map": "/papierfutzi/static/js/3.dc033189.chunk.js.map",
+    "main.js": "/papierfutzi/static/js/main.a1db14cd.chunk.js",
+    "main.js.map": "/papierfutzi/static/js/main.a1db14cd.chunk.js.map",
+    "runtime-main.js": "/papierfutzi/static/js/runtime-main.95783234.js",
+    "runtime-main.js.map": "/papierfutzi/static/js/runtime-main.95783234.js.map",
+    "static/js/2.3e2c81ac.chunk.js": "/papierfutzi/static/js/2.3e2c81ac.chunk.js",
+    "static/js/2.3e2c81ac.chunk.js.map": "/papierfutzi/static/js/2.3e2c81ac.chunk.js.map",
+    "static/js/3.bc521a5c.chunk.js": "/papierfutzi/static/js/3.bc521a5c.chunk.js",
+    "static/js/3.bc521a5c.chunk.js.map": "/papierfutzi/static/js/3.bc521a5c.chunk.js.map",
     "index.html": "/papierfutzi/index.html",
     "static/css/main.6ca6e2af.chunk.css.map": "/papierfutzi/static/css/main.6ca6e2af.chunk.css.map",
-    "static/js/2.4ce2ba1d.chunk.js.LICENSE.txt": "/papierfutzi/static/js/2.4ce2ba1d.chunk.js.LICENSE.txt"
+    "static/js/2.3e2c81ac.chunk.js.LICENSE.txt": "/papierfutzi/static/js/2.3e2c81ac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c8eb353.js",
-    "static/js/2.4ce2ba1d.chunk.js",
+    "static/js/runtime-main.95783234.js",
+    "static/js/2.3e2c81ac.chunk.js",
     "static/css/main.6ca6e2af.chunk.css",
-    "static/js/main.8ca1e418.chunk.js"
+    "static/js/main.a1db14cd.chunk.js"
   ]
 }
