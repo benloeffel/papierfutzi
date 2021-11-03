@@ -18,12 +18,8 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <small>
-          Built with <span>❤</span> by Ben & Bee
-        </small>
-        <small>
-          Version <span>0.1</span>
-        </small>
+        <small>Built with <span>❤</span> by Ben & Bee</small>
+        <small> Version <span>0.2</span></small>
       </Container>
     </StyledFooter>
   );
