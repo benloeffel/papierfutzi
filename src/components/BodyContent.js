@@ -211,6 +211,7 @@ const BodyContent = () => {
                     name='arrivalDateTime'
                     label='Arrival Date & Time'
                     format={dateTimePickerFormat}
+                    InputLabelProps={{ shrink: true }}
                     ampm={false}
                     fullWidth
                   />
@@ -230,6 +231,7 @@ const BodyContent = () => {
                     component={KeyboardDateTimePicker}
                     name='departureDateTime'
                     label='Departure Date & Time'
+                    InputLabelProps={{ shrink: true }}
                     format={dateTimePickerFormat}
                     ampm={false}
                     fullWidth
